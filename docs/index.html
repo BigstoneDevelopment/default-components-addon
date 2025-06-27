@@ -42,34 +42,61 @@
         <div class="my-32">
             <h1 class="uk-h2 text-center font-bold">Bigstone Sandbox</h1>
             <h1 class="uk-h4 text-center font-bold">Upload Component</h1>
+
             <div class="flex justify-center my-12">
                 <form>
-                    <label class="uk-form-label">Upload your component schematic</label>
-                    <div class="" aria-describedby="upload-help-block">
-                        <div class="mt-4">
-                            <div data-uk-form-custom="target: true">
-                                <input type="file" aria-label="Custom controls" />
-                                <input
-                                    class="uk-input max-w-sm"
-                                    type="text"
-                                    placeholder="Select file"
-                                    aria-label="Custom controls"
-                                    disabled
-                                />
-                            </div>
-                            <button class="uk-btn uk-btn-default">Submit</button>
-                        </div>
-                    
-                        <div data-uk-form-custom>
-                            <input type="file" aria-label="Custom controls" />
-                            <button class="uk-btn uk-btn-default" type="button" tabindex="-1">
-                                Select
-                            </button>
-                        </div>
+
+                    <div>
+                      <label class="uk-form-label">Component Schematic:</label>
+                      <div aria-describedby="upload-help-block">
+                          <div data-uk-form-custom class="my-2">
+                              <input type="file" aria-label="Custom controls" />
+                              <button class="uk-btn uk-btn-default" type="button" tabindex="-1">
+                                  Select .nbt file
+                              </button>
+                          </div>
+                      </div>
+                      <div class="uk-form-help" id="upload-help-block">
+                              This must be a .nbt file. Litematica and structure blocks can export to .nbt
+                      </div>
                     </div>
-                    <div class="uk-form-help" id="upload-help-block">
-                            This must be a .nbt file. Litematica and structure blocks can export to .nbt.
+
+                    <div>
+                      <label class="uk-form-label">Component Display Name:</label>
+                      <div class="">
+                        <input
+                          class="uk-input"
+                          type="text"
+                          placeholder="Enter"
+                          aria-label="Name..."
+                        />
+                      </div>
                     </div>
+
+                    <div>
+                      <label class="uk-form-label">Component Author:</label>
+                      <div class="">
+                        <input
+                          class="uk-input"
+                          type="text"
+                          placeholder="Enter"
+                          aria-label="Author..."
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label class="uk-form-label">Component Description:</label>
+                      <div class="">
+                        <input
+                          class="uk-input"
+                          type="text"
+                          placeholder="Enter"
+                          aria-label="A simple 16x16x16 redstone lamp..."
+                        />
+                      </div>
+                    </div>
+
                 </form>
             </div>
         </div>
