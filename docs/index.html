@@ -39,19 +39,23 @@
 <body class="bg-background text-foreground">
 
     <div class="uk-container">
-        <form>
-            <div data-uk-form-custom>
-                <label class="uk-form-label">Upload your component schematic</label>
-                <input type="file" aria-describedby="upload-help-block" />
-                <button type="button"></button>
-                <div class="uk-form-help" id="upload-help-block">
-                    This must be a .nbt file. On a singleplayer world you can use structure blocks to get a .nbt file however, on a server you must use the litematica mod:
-                        - Select your *.litematic file in the Schematic Manager menu.
-                        - Two buttons will appear at the bottom: Save As: and Schematic / Vanilla.
-                        - First click on the second button so that it says Vanilla, and then click on Save As: .nbt
+        <div class="space-y-4">
+            <h1 class="uk-hero-sm text-center font-bold">Bigstone Sandbox</h1>
+            <h1 class="uk-hero-sm text-center font-bold">Upload Component</h1>
+            <form>
+                <div data-uk-form-custom>
+                    <label class="uk-form-label">Upload your component schematic</label>
+                    <input type="file" aria-describedby="upload-help-block" />
+                    <button type="button"></button>
+                    <div class="uk-form-help" id="upload-help-block">
+                        This must be a .nbt file. On a singleplayer world you can use structure blocks to get a .nbt file however, on a server you must use the litematica mod:
+                            - Select your *.litematic file in the Schematic Manager menu.
+                            - Two buttons will appear at the bottom: Save As: and Schematic / Vanilla.
+                            - First click on the second button so that it says Vanilla, and then click on Save As: .nbt
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 
 </body>
