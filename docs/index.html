@@ -39,13 +39,27 @@
 <body class="bg-background text-foreground">
 
     <div class="uk-container">
-        <div class="space-y-4">
+        <div class="my-32">
             <h1 class="uk-h2 text-center font-bold">Bigstone Sandbox</h1>
             <h1 class="uk-h4 text-center font-bold">Upload Component</h1>
-            <div class="flex justify-center gap-x-2">
+            <div class="flex justify-center my-12">
                 <form>
                     <label class="uk-form-label">Upload your component schematic</label>
                     <div class="" aria-describedby="upload-help-block">
+                        <div class="mt-4">
+                            <div data-uk-form-custom="target: true">
+                                <input type="file" aria-label="Custom controls" />
+                                <input
+                                    class="uk-input max-w-sm"
+                                    type="text"
+                                    placeholder="Select file"
+                                    aria-label="Custom controls"
+                                    disabled
+                                />
+                            </div>
+                            <button class="uk-btn uk-btn-default">Submit</button>
+                        </div>
+                    
                         <div data-uk-form-custom>
                             <input type="file" aria-label="Custom controls" />
                             <button class="uk-btn uk-btn-default" type="button" tabindex="-1">
